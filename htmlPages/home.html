@@ -1,0 +1,194 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        
+        #windowEnetre {
+            display: none;
+            position: absolute;
+            left: 27vw;
+            top: -1vw;
+            display: block;
+            font-size: 2vw;
+            width: 38vw;
+            height: 48vw;
+            color: white;
+            contain: content;
+            font-family: cursive;
+            border: none;
+            z-index: 1;
+            opacity: 0.9;
+            margin: auto;
+        }
+
+        #ImgDetails {
+            display: none;
+            width: 38vw;
+            height: 38vw;
+            margin: 0;
+            z-index: 1;
+        }
+
+        input {
+            display: none;
+            width: 14vw;
+            height: 3vw;
+            color: black;
+            position: absolute;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 3vw;
+            background-color: transparent;
+            border: none;
+            outline: none;
+            z-index: 5;
+        }
+
+        #input_password,#code {
+            right: 16.5vw;
+            top: 29.5vw;
+        }
+
+        #input_name,#namePlayer {
+            top: 24.5vw;
+            right: 16.5vw;
+        }
+
+        #Back {
+            width: 100vw;
+            height: 62vw;
+            position: fixed;
+            z-index: -10;
+            opacity: 0.8;
+            margin: 0;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Fb Asher';
+        }
+
+        #buttun_next {
+            display: none;
+            width: 19vw;
+            height: 4vw;
+            position: absolute;
+            right: 44.5vw;
+            top: 33vw;
+            border: none;
+            outline: none;
+            background-color: transparent;
+            z-index: 5;
+            border: none;
+        }
+
+        #Instruction {
+            display: none;
+            width: 80vw;
+            height: 28vw;
+            position: absolute;
+            left: 9vw;
+            top: 5vw;
+            background-color: #3e3e3e;
+            border-radius: 10%;
+        }
+
+        .IMGTOPLAY {
+            WIDTH: 13vw;
+            height: 13vw;
+        }
+
+        #classicIMG {
+            position: absolute;
+            left: 24vw;
+            z-index: 12;
+            top: 30vw;
+        }
+
+        #subjectIMG {
+            position: absolute;
+            right: 24vw;
+            z-index: 12;
+            top: 30vw;
+        }
+
+        #d {
+            display: none;
+        }
+
+        #sub {
+            display: none;
+            width: 10vw;
+            height: 10vw;
+            background-color: aliceblue;
+        }
+
+   </style>
+    <script>
+
+
+        function func_in_close() {
+            if (window.localStorage) {
+                var full_name = document.getElementById("namePlayer").value;
+                var code = document.getElementById("code").value;
+
+                if (localStorage.getItem(full_name, code)) {
+                    alert("הינך משתמש קיים");
+                    alert(" שלום " + full_name + " !");
+                }
+                else {
+                    if (full_name && code) {
+                        localStorage.setItem(full_name, code);
+                        alert("נרשמת במערכת");
+                        alert(" שלום "  + full_name+" !");
+                    }
+                    else
+                        alert("הכנס שם משתמש וסיסמא");
+                }
+            }
+            else
+                alert("no localStorage");
+        }
+
+        function func_in_come() {
+            if (window.localStorage) {
+                
+                var n = document.getElementById("namePlayer").textContent;
+                localStorage.setItem('fullName', n);
+
+            }
+        }
+
+
+        function displayEntere() {
+            document.getElementById("windowEnetre").style.display = "block";
+            document.getElementById("d").style.display = "block";
+            document.getElementById("buttun_next").style.display = "block";
+            document.getElementById("namePlayer").style.display = "block";
+            document.getElementById("code").style.display = "block";
+
+
+        }
+
+    </script>
+
+</head>
+<body dir="rtl" onload="displayEntere(),func_in_come()">
+    <img id="Back" src="pictures/6284.jpg" />
+    <div id="windowEnetre">
+        
+        <img id="d" src="pictures/Details.svg" />
+        <br />
+        <input id="namePlayer" required="required" type="text" /><br /><br />
+        <input id="code" type="password" />
+        <br />
+    </div>
+
+
+    <a href="labGame.html">
+        <div id="buttun_next" onclick="func_in_close()" class="button" ></div>
+    </a>
+</body>
+</html>

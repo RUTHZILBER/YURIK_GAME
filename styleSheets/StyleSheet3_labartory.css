@@ -1,0 +1,147 @@
+﻿body {
+
+}
+button{
+    position:absolute;
+    bottom:40px;
+    font-size:40px;
+    font-family:Arial;
+    background-color:#ff6a00;
+}
+div {
+    height: 26vh;
+    width: 36vh;
+    padding: 1%;
+    display: inline-table;
+    box-shadow: 2px 1px 7px 0px black;
+    margin: 1%;
+}
+.img {
+    width: 15vh;
+    position: relative;
+    left: 35px;
+    top: 35px;
+    bottom:200px;
+}
+li {
+    float: left;
+}
+
+    li a {
+        padding: 8px 0 8px 16px;
+        display: inline-block;
+        text-decoration: none;
+        position:relative;
+    }
+#dd {
+    width: 20vh;
+    height: 10vh;
+    background-color:#808080;
+    position: relative;
+    left: 120px;
+    bottom: 150px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    border-top-right-radius: 40px;
+}
+#dd2 {
+    background-color: white;
+    width: 19vh;
+    height: 8vh;
+    position: relative;
+    left: 4px;
+    top: 7px;
+    border-radius: 30px;
+    font-size: 20px;
+}
+
+p {
+    position: relative;
+    left: 20px;
+    bottom:13px;
+}
+
+#fire {
+    width: 40vh;
+    height: 40vh;
+    opacity: 0.2;
+    position: relative;
+}
+
+.ex {
+    opacity: 1;
+}
+
+#div1 {
+    position: relative;
+    left: 100px;
+    top: 150px;
+    left: 400px;
+
+}
+
+#d2 {
+    position: relative;
+    left: 100px;
+    top: 150px;
+}
+
+#d3 {
+    position: relative;
+    left: 400px;
+    top: 150px;
+}
+
+#d4 {
+    position: relative;
+    left: 100px;
+    top: 150px;
+}
+#menu{
+    width:8vh;
+    position:relative;
+    /*top:30px;*/
+    right:12px;
+}
+#p1{
+    font-family:Jokerman;
+    font-size:80px;
+    position:relative;
+    bottom:70px;
+    color:#ff6a00;
+}
+ul {
+    list-style-type: none;
+    background-color:gray;
+    padding: 0px;
+    overflow: hidden;
+    height: 17vh;
+}
+li a{
+    position:relative;
+    left:950px;
+}
+#home{
+    width:15vh;
+    right:50px;
+}
+li a:hover {
+    background-color: gray;
+}
+#lm{
+    position:relative;
+    top:30px;
+}
+#c1 {
+    width: 15vh;
+    position:absolute;
+    left:400px;
+    top:290px;
+}
+
+#c2 {
+    position: absolute;
+    width: 20vh;
+    left:300px;
+    top:550px;
+}

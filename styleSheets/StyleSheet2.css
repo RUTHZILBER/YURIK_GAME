@@ -1,0 +1,33 @@
+﻿body {
+}
+img {
+    width: 2vw;
+    margin: 1%;
+    /*display: inline-flex;
+    position:relative;
+    top:370px;*/
+}
+#wraaper{
+    display:flex;
+    justify-content:space-around;
+    
+    flex-direction:column-reverse;
+
+}
+@keyframes imag {
+    0% {
+        left: 0px;
+    }
+
+    100% {
+        left: 700px;
+    }
+}
+
+.im {
+    /*position: relative;*/
+    animation-name: imag;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}

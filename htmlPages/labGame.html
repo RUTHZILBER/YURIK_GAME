@@ -1,0 +1,1475 @@
+﻿<!DOCTYPE html>
+<html>
+<!--לא הצלחתי לעצור את המשחק עם דגל flagPlay 
+בגלל ה"סט אנטרוול" בכפתור עם הסמל הזה. אשמח שהמורה תנסה. בהנאה😛😛🙃-->
+<!--למורה טחן תגית מענינת<meter min="0" max="100" value="2" low="33" high="66" optimum="100">22/100</meter>
+ <div id="screem"></div>-->
+<!--min=begin max=end value low to begin the avargae situation .
+the optimum will rull for you which segment will be red, green, yellow.-->
+<head>
+    <meta charset="utf-8" />
+    <title>👩🏻‍🤶🏻🤣😂👮🏻‍👨🏻‍⚖️👩🏻‍🌾👨🏻‍🌾👩🏻‍🍳👩🏻‍🔬👨🏻‍💼👩🏻‍💼</title>
+    <script src="../scripts/jquery-3.5.1.min.js"></script>
+    <script src="../scripts/imuji.js"></script>
+    
+    <script>
+        
+        var volumes = 1;
+        function stopVolume() {
+            if (volumes == 1) {
+                volumes = 0;
+                $('#p').css("background-color", "black");
+            }
+
+            else {
+                volumes = 1; $('#p').css("background-color", "transparent");
+            }
+            
+        }
+
+        function showMod() {
+            document.getElementById("firstText").showModal();
+            setTimeout(function () { document.getElementById("firstText").close() }, 2000);
+
+
+        }
+        $(document).ready(function () {
+            var eee = $('.tubes');
+
+            $("#boy").click(function () {
+
+                $("#boy").css("transform", "rotate(320deg)");
+
+
+                setTimeout(function () {
+                    $("#boy").css("transform", "rotate(360deg)");
+                    setTimeout(function () {
+                        setTimeout(function () {
+
+                            $("#boy").css("transform", "rotate(0deg)")
+                        }, 100)
+                        $("#boy").css("transform", "rotate(380deg)")
+                    }, 100)
+
+                }, 100)
+
+
+            });
+
+
+            $("#screemi").fadeOut("slow");
+            $("#screemi").fadeIn("slow");
+
+            $("#boy").on({
+                mouseover: function () {
+                    $("#v11").css("color", "rgba(73, 76, 180, 0.8)").animate({ width: "11vw", opacity: "1" }, 500)
+                        .animate({ fontSize: "2vw" }, 500).animate({ fontSize: "1vw" }, 1000).animate({ opacity: "0.3" }, 100);
+
+                },
+
+
+            })
+            $("#boy").click(function () {
+
+            });
+        //"ברוך הבא" בכניסה למשחק.........
+            //$("#boy").one({
+            //    mouseover: function () {
+            //        showMod();
+            //        $("#wantHelp").css("color", "transparent").animate({ width: "90%", opacity: "1" }, 500)
+            //            .animate({ fontSize: "2vw" }, 500).animate({ fontSize: "1vw" }, 1000).animate({ opacity: "0.8" }, 100);
+            //        var hh1 = document.getElementById('startGame');
+            //        hh1.currentTime = 0;
+            //        hh1.volume = volumes;
+            //        hh1.play();
+            //    }
+            //})
+
+        });
+
+    </script>
+
+    <style>
+        #titleId{
+            font-size:3em;
+           
+        }
+        #v11 {
+            position: relative;
+            -moz-border-radius: 50px;
+            -webkit-border-radius: 50px;
+            border-radius: 50px;
+            background-color: #efb71b;
+            width: 7vw;
+            height: 16vh;
+            position: fixed;
+            z-index: 9;
+            top: 30vh;
+            font-family: 'Fb Asher';
+            font-size: 1vw;
+            text-align: right;
+            right: 40vw;
+            color: #efb71b;
+            z-index: 200;
+            border-radius: 100vw;
+            text-align: center;
+        }
+
+
+            #v11:before,
+            #v11:after {
+                content: '';
+                position: absolute;
+                border-bottom: 80px solid #efb71b;
+                border-left: 10px solid transparent;
+                border-right: 40px solid transparent;
+                top: 70px;
+                left: -10px;
+                -webkit-transform: rotate(-140deg);
+                -moz-transform: rotate(-140deg);
+                -ms-transform: rotate(-140deg);
+                -o-transform: rotate(-140deg);
+                z-index: -3;
+            }
+        #p {
+            height: 1vw;
+            background-color: transparent;
+            top: 4vw;
+            width: 7vw;
+            position: absolute;
+            right: 3.5vw;
+            border-radius: 50px;
+            transform :rotate(380deg);
+        }
+
+
+        ::-webkit-scrollbar {
+            width: 1vw;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 5px grey;
+            border-radius: 100px;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: #545454;
+            border-radius: 10px;
+        }
+
+       /* Handle on hover */
+      ::-webkit-scrollbar-thumb:hover {
+          background: rgba(73, 76, 180, 0.9);
+      }
+
+        #firstText {
+            color: black;
+            content: "kll";
+        }
+
+        #buttonHelp {
+            top: 22vw;
+        }
+
+        #buttonIndex {
+            top: 32vw;
+        }
+
+        #buttonStar {
+            top: 42vw;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+        }
+
+        #buttonContinue, #buttonStop {
+            top: 12vw;
+        }
+
+        #buttonMixUp {
+            top: 2vh;
+            width: 7vw;
+        }
+
+        #buttonAudio {
+            top: 2vh;
+            width: 8vw;
+        }
+
+        #new {
+            background-color: #1ae3e9;
+            height: 200px;
+        }
+
+        .options {
+            position: absolute;
+            right: 3vw;
+            height: 7vw;
+            width: 7vw;
+        }
+
+        #optionsButtons {
+            position: absolute;
+            top: 0vh;
+            right: 0vw;
+        }
+
+
+
+        @keyframes cl {
+            0% {
+                height: 0vh;
+            }
+
+            100% {
+                height: 47vh;
+            }
+        }
+
+
+
+        .y {
+            height: 47vh;
+            width: 7vh;
+            background: linear-gradient(to top, yellow,white);
+            border-bottom-left-radius: 40px;
+            border-bottom-right-radius: 40px;
+            opacity: 0.4;
+            position: relative;
+            left: 10px;
+            top: 10px;
+            animation-name: cl;
+            animation-duration: 10s;
+            animation-fill-mode: forwards;
+        }
+
+        #clock {
+            position: absolute;
+            bottom: 50vh;
+            left: 8vw;
+            width: 4vw;
+            filter: hue-rotate(145deg);
+            height: 5vw;
+        }
+
+        body {
+            min-height: 550px;
+        }
+
+        #water {
+            height: 0vh;
+            position: absolute;
+            bottom: 25vh;
+            left: 8vw;
+            width: 4vw;
+            border-radius: 3vh;
+            background: linear-gradient(to right, transparent,rgba(73, 76, 180, 0.5),rgba(73, 76, 180, 0.75),rgba(73, 76, 180, 0.9),rgba(73, 76, 180, 0.9),rgba(73, 76, 180, 0.75),rgba(73, 76, 180,0.5),transparent);
+        }
+
+        #fullWater {
+            width: 4vw;
+            height: 25vh;
+            background: linear-gradient(to right,rgba(73, 76, 180, 0.8),rgba(73, 76, 180, 0.18), rgba(73, 76, 180,0.08),rgba(73, 76, 180, 0.058),rgba(73, 76, 180, 0.038),transparent, transparent,transparent,transparent, transparent,transparent,transparent, rgba(91, 55, 255,0.038),rgba(73, 76, 180, 0.058),rgba(73, 76, 180, 0.08),rgba(73, 76, 180,0.18),rgba(73, 76, 180, 0.8) );
+            border-radius: 3vh;
+            border-bottom: solid;
+            border-bottom-color: rgba(73, 76, 180, 0.8);
+            position: absolute;
+            bottom: 25vh;
+            left: 8vw;
+        }
+
+        aside {
+            position: absolute;
+            left: 28vw;
+            width: 50vw;
+            height: 48vw;
+            top: 0vw;
+        }
+
+        #star {
+            width: 15vw;
+            height: 8vw;
+            border-bottom-left-radius: 10vw;
+            border-bottom-right-radius: 10vw;
+            top: 0;
+            border: rgba(91, 55, 255,0.038);
+            left: 45vw;
+            background: linear-gradient(to right, transparent,rgba(73, 76, 180, 0.5),rgba(73, 76, 180, 0.75),rgba(73, 76, 180, 0.9),rgba(73, 76, 180, 0.9),rgba(73, 76, 180, 0.75),rgba(73, 76, 180,0.5),transparent);
+            position: absolute;
+            border-top-right-radius: 0;
+            border-top-left-radius: 0;
+        }
+
+        #stari1 {
+            position: absolute;
+            width: 7.5vw;
+            height: 7.5vw;
+            left: 45vw;
+            top: 1.5vw;
+            transform: rotate(90deg);
+            filter: grayscale(100%);
+        }
+
+        #stari2 {
+            position: absolute;
+            width: 10vw;
+            height: 10vw;
+            left: 47.5vw;
+            top: 2vw;
+            filter: grayscale(100%);
+        }
+
+        #stari3 {
+            position: absolute;
+            width: 7.5vw;
+            height: 7.5vw;
+            left: 52.8vw;
+            top: 1.7vw;
+            transform: rotate(-90deg);
+            filter: grayscale(100%);
+        }
+
+
+        #button {
+            background-color: #555858;
+            border-color: rgba(1, 205, 215, 0.8);
+            position: absolute;
+            top: 0vw;
+            right: 0vw;
+            width: 4vw;
+            height: 50vw;
+            border-radius: 0;
+        }
+
+
+        .closebtn {
+            position: absolute;
+            top: 0vw;
+            right: 0vw;
+            font-weight: 900;
+            font-size: 3vw !important;
+            text-decoration-line: none;
+            text-shadow: 0.001vw 0.001vw black;
+            color: white;
+        }
+
+        span {
+            color: white;
+            font-size: 1.5vw;
+            position: absolute;
+        }
+
+        #imgend {
+            width: 10vw;
+            height: 10vw;
+            animation-name: imgend;
+            animation-duration: 1s;
+            animation-iteration-count: 1;
+        }
+
+        #water {
+            height: 0vw;
+            background: linear-gradient(to right, transparent,rgba(73, 76, 180, 0.5),rgba(73, 76, 180, 0.75),rgba(73, 76, 180, 0.9),rgba(73, 76, 180, 0.9),rgba(73, 76, 180, 0.75),rgba(73, 76, 180,0.5),transparent);
+        }
+
+        #span1 {
+            top: 0;
+            left: 9.5vw;
+        }
+
+        #span2 {
+            top: 2vw;
+            left: 9.5vw;
+        }
+
+        #counter {
+            top: 0;
+            left: 7.9vw;
+            color: red;
+            text-shadow: red 1px 1px 1px;
+        }
+
+        #d {
+            top: 2vw;
+            left: 8vw;
+            color: yellow;
+            text-shadow: #41eb20 1px 1px 1px;
+        }
+
+        .star {
+            width: 6vw;
+            height: 6vw;
+            z-index: 1;
+            transition: 0.5s;
+        }
+
+        #step {
+            left: 5.5vw;
+            top: -0.1vw;
+            color: #5adb15;
+        }
+
+        #spanstar {
+            left: 5.5vw;
+            top: 1.7vw;
+        }
+
+        #boy {
+            width: 9vw;
+            height: 41vh;
+            align-content: space-between;
+            align-self: flex-end;
+            align-items: baseline;
+            margin-left: 8.8vw;
+        }
+
+        #boy1 {
+            width: 8.4vw;
+            height: 41vh;
+            align-content: space-between;
+            align-self: flex-end;
+            align-items: baseline;
+            box-shadow: 2px 3px 7px 8px red;
+        }
+
+        #screemi {
+            display: flex;
+            justify-content: space-around;
+            background-color: white;
+            border-radius: 30px;
+            text-align: end;
+            border-bottom: black solid 6px;
+            border-top: white 50px solid;
+        }
+
+        @keyframes flaot {
+            0% {
+                top: -30vh;
+            }
+
+            100% {
+                top: 0vh;
+            }
+        }
+
+        html {
+            min-height: 600px;
+        }
+
+        html {
+            min-height: 600px;
+        }
+
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 11;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+
+
+
+            .sidenav a {
+                padding: 8px 8px 8px 32px;
+                text-decoration: none;
+                font-size: 25px;
+                color: #818181;
+                display: block;
+                transition: 0.3s;
+            }
+
+                .sidenav a:hover {
+                    color: #f1f1f1;
+                }
+
+            .sidenav .closebtn {
+                position: absolute;
+                top: 0;
+                right: 25px;
+                font-size: 36px;
+                margin-left: 50px;
+            }
+
+        button {
+            background-color: blueviolet;
+            width: 100px;
+            height: 130px;
+        }
+
+
+        #h {
+            background-color: black;
+            height: 250px;
+            width: 120px;
+            color: white;
+        }
+
+        .t {
+            background-image: url('../pictures/tube.jpg');
+            height: 250px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            justify-content: flex-end;
+            flex-direction: column;
+            flex-wrap: wrap;
+            display: flex;
+        }
+
+        .tubes {
+            background-image: url('../pictures/tube.jpg');
+            height: 450px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            justify-content: flex-end;
+            flex-direction: column;
+            flex-wrap: wrap;
+            display: flex;
+            width: 60px;
+            align-content: flex-end;
+        }
+
+            .tubes .ball {
+                width: 60px;
+                height: 60px;
+            }
+
+        .ball {
+            width: 30px;
+            height: 30px;
+            margin-left: 0.3vw;
+        }
+
+
+
+        #wrapperTubes {
+            width: 30vw;
+            height: 16vh;
+            display: flex;
+            justify-content: center;
+            flex-flow: row;
+        }
+
+        .tube {
+            background-color: gray;
+            width: 50px;
+            height: 50px;
+        }
+
+        #game {
+            align-self: center;
+        }
+
+        #t {
+            width: 75px;
+            height: 359px;
+            background: transparent;
+        }
+
+        #wrapperBody {
+            display: flex;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        article {
+            display: flex;
+        }
+
+        #sectionn {
+            display: flex;
+            justify-content: center;
+        }
+
+        #redBall {
+            width: 3vw;
+            height: 3vh;
+            background-color: blue;
+        }
+
+        #tubeSelf {
+            width: 75px;
+            height: 350px;
+            background-color: darkslategray;
+        }
+
+
+        #loss_time, #you_won {
+            background-color: white;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            position: absolute;
+            display: none;
+            top: 8vw;
+            width: 38vw;
+            height: 62vh;
+            border: solid;
+            font-size: xx-large;
+            border-radius: 40px;
+            border: 20px solid blue;
+            z-index: 100;
+        }
+
+        #loss_time {
+            background-image: url('../pictures/כשלון.png');
+        }
+
+        .tubes img {
+            margin-right: -0.3vw;
+        }
+
+        #you_won {
+            background-image: url('../pictures/ניצחון.png');
+        }
+
+        #you_won {
+            height: 62vh;
+            top: 10.5vw;
+        }
+
+        #buttonIndex_1 {
+            top: 3vh;
+            right: 26vh;
+        }
+
+        #buttonMixUp_1 {
+            top: 3vh;
+            right: 7vh;
+        }
+
+        #buttonMixUp_2 {
+            top: 3vh;
+            right: 7vh;
+        }
+
+
+        @keyframes imgend {
+            0% {
+                height: 0;
+            }
+
+            100% {
+                height: 10vw;
+            }
+        }
+
+        @media screen and (max-width: 32000px) and (min-width: 1600px) {
+            .tubes {
+                width: 80px;
+                height: 600px;
+            }
+
+            #screemi {
+                box-shadow: 7px 6px 30px 1px black;
+            }
+
+            .t {
+                width: 58px;
+                height: 440px;
+            }
+
+            .tubes .ball {
+                width: 76px;
+                height: 70px;
+            }
+
+            .t .ball {
+                width: 56px;
+                height: 53px;
+            }
+        }
+
+        @media screen and (max-width: 1600px) and (min-width: 800px) {
+            #v11{
+                display:none;
+            }
+            .tubes {
+                width: 60px;
+                height: 450px;
+            }
+
+            #screemi {
+                box-shadow: 7px 6px 30px 1px black;
+                align-self: baseline;
+                width: 250px;
+                margin-top: 120px;
+            }
+
+            .t {
+                width: 43px;
+                height: 320px;
+                align-content: center;
+            }
+
+            .tubes .ball {
+                width: 56px;
+                height: 55px;
+            }
+
+            .tubes {
+                margin-bottom: 250px;
+            }
+
+
+            .t .ball {
+                width: 36px;
+                height: 36px;
+            }
+
+            #loss_time, #you_won {
+                width: 390px;
+                height: 330px;
+            }
+
+            #buttonMixUp_1 {
+                right: 2vh;
+                top: 2vh;
+            }
+
+            #buttonIndex_1 {
+                right: 15vh;
+                top: 2vh;
+            }
+
+            #buttonMixUp_2 {
+                right: 2vh;
+                top: 2vh;
+            }
+        }
+
+        @media screen and (max-width: 800px) and (min-width: 0px) {
+            .tubes {
+                width: 60px;
+                height: 400px;
+            }
+
+            #screemi {
+                border: solid #778d83 1px;
+                align-items: flex-end;
+            }
+
+            .t {
+                width: 22px;
+                height: 200px;
+                margin-top: 2vh;
+            }
+
+            .tubes .ball {
+                width: 50px;
+                height: 48px;
+            }
+
+            .t .ball {
+                width: 25px;
+                height: 24px;
+            }
+
+            #boy, #boy1 {
+                display: none;
+            }
+
+            #loss_time, #you_won {
+                width: 230px;
+                height: 210px;
+            }
+
+            #buttonMixUp_1 {
+                right: 0.5vh;
+                top: 1vh;
+            }
+
+            #buttonIndex_1 {
+                right: 7vh;
+                top: 1vh;
+            }
+
+            #buttonMixUp_2 {
+                right: 0.5vh;
+                top: 1vh;
+            }
+        }
+
+        @media screen and (max-width: 1800px) and (min-width: 0px) {
+            #screemi::after {
+                content: kkl;
+            }
+
+            #screemi::before {
+                content: kk;
+            }
+        }
+
+        @media screen and (max-width: 800px) and (min-width: 0px) {
+            #v11 {
+                display: none;
+            }
+            #screemi::after {
+                content: kkl;
+            }
+
+            #screemi::before {
+                content: kk;
+            }
+
+            #screemi {
+                width: 140px;
+                height: 240px;
+                margin-top: 200px;
+            }
+        }
+
+        @media screen and (max-width: 555800px) and (min-width: 1400px) {
+            #screemi::after {
+                content: "";
+            }
+
+            #screemi {
+                width: 300px;
+                height: 600px;
+            }
+
+                #screemi::before {
+                    content: "";
+                }
+        }
+
+        #fail {
+            display: none;
+        }
+
+        #startGame, #corr {
+            display: none;
+        }
+
+        .learn {
+            color: white;
+            text-align:right;
+            font-size: 2em;
+            margin-right: 30px;
+            font-family: 'Fb Asher';
+        }
+
+        img:last-child {
+            margin-bottom: 4px;
+        }
+    </style>
+
+    <script>
+
+        var ccnt = 0;
+        var f_check = 0;
+        $(document).ready(function () {
+
+            $("#buttonMixUp_1").click(function () {
+                f_check = 2;
+                $("#loss_time").hide();
+                var x = $(".tubes img");
+                for (var i = 0; i < x.length; i++)
+                    x[i].remove();
+
+                var y = $(".t img");
+                for (var i = 0; i < y.length; i++)
+                    y[i].remove();
+
+                ccnt = 0;
+                f_check = 0;
+                $(this).attr("onloaded", setInterval('func()', 3));
+                $(this).attr("onloaded", fFill());
+            });
+
+            $("#buttonMixUp_2").click(function () {
+                f_check = 2;
+                $("#you_won").hide();
+                var xx = $(".tubes img");
+                for (var i = 0; i < xx.length; i++)
+                    xx[i].remove();
+
+                var yy = $(".t img");
+                for (var i = 0; i < yy.length; i++)
+                    yy[i].remove();
+
+                ccnt = 0;
+                f_check = 0;
+
+                $(this).attr("onloaded", setInterval('func()', 3));
+                $(this).attr("onloaded", fFill());
+
+            });
+        });
+
+        
+        var h2, m2, s2, x, y;
+        var ss = 1;
+
+        var tube1 = new Array();
+        var tube2 = new Array();
+        var tube3 = new Array();
+
+        fixed2 = 0;
+
+        var flagPlay =1;
+        function stopContinue() {//כאן אמור להיות השהית משחק או שחרור השהיה. לא הסתדרתי עם החזרת שעון החול מהמקום בו היה
+            //if (flagPlay == 0)
+            //    flagPlay = 1;
+            //if (flagPlay == 1)
+            //    flagPlay = 0;
+
+        }
+
+        function func() {
+
+            fflag = false;
+            if ((ccnt < 25)&& (says == false)) {
+                if (flagPlay == 1) {
+                    ccnt += 0.0005;
+                    document.getElementById("water").style.height = ccnt + "vh";
+                }
+                
+            }
+
+            if (ccnt >= 25) {
+
+                if (says == false) {
+                    check();
+                }
+            }
+        }
+
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "300px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+
+        function backward() {
+            window.history.back();
+        }
+
+        function forward() {
+            window.history.forward();
+        }
+
+
+        function fScanTubes() {
+            var tubes = document.querySelectorAll('.tubes');
+            for (var i = 0; i < 3; i++) {
+                tubes[i].lastChild.setAttribute("draggable", "true");
+                var c = tubes.querySelectorAll('img');
+                for (var j = 0; j < c.length - 1; c++) {
+                    c[j].setAttribute("draggable", "true");
+                }
+            }
+        }
+
+        function sof() {
+
+            var x = document.querySelectorAll("#t1 img");
+            var y = document.querySelectorAll("#t2 img");
+            var z = document.querySelectorAll("#t3 img");
+            if (x.length != 0) {
+                x[0].setAttribute("draggable", "true");
+                for (var i = 1; i < x.length; i++) {
+                    x[i].setAttribute("draggable", "false");
+                }
+            }
+            if (y.length != 0) {
+                y[0].setAttribute("draggable", "true");
+                for (var i = 1; i < y.length; i++) {
+                    y[i].setAttribute("draggable", "false");
+                }
+            }
+
+            if (z.length != 0) {
+                z[0].setAttribute("draggable", "true");
+                for (var i = 1; i < z.length; i++) {
+                    z[i].setAttribute("draggable", "false");
+                }
+            }
+
+
+
+        }
+
+        var says;
+
+        function fFill()//this function fills the tubes
+        {
+
+
+            //f_check = 2;
+            says = false;
+            document.getElementById("counter").innerHTML = Number(document.getElementById("counter").textContent) + 1;
+            $("#buttonMixUp").css("display", "none");
+            tube1 = new Array();
+            tube2 = new Array();
+            tube3 = new Array();
+            var countArray = [1, 3, 3, 3];
+            var count = 0;
+            //here I random the balls into three arrays
+            var x = Math.floor(Math.random() * 4);
+            while ((x == 0) || (countArray[x]) == 0)
+                x = Math.floor(Math.random() * 4);
+
+            while ((x != 0) && (count != 4)) {
+                countArray[x]--;
+                tube1[tube1.length] = x;
+                x = Math.floor(Math.random() * 4);
+                count++;
+                while (((countArray[x] == 0)) && (count < 9))
+                    x = Math.floor(Math.random() * 4);
+            }
+
+            tube1[tube1.length] = 0;
+            x = Math.floor(Math.random() * 4);
+            while ((x == 0) || (countArray[x]) == 0)
+                x = Math.floor(Math.random() * 4);
+
+            while ((x != 0) && (count != 7)) {
+                tube2[tube2.length] = x;
+                countArray[x]--;
+                x = Math.floor(Math.random() * 4);
+                count++;
+                while (((countArray[x] == 0)) && (count != 7))
+                    x = Math.floor(Math.random() * 4);
+            }
+
+            tube2[tube2.length] = 0;
+            x = Math.floor(Math.random() * 4);
+            while ((x == 0) || (countArray[x]) == 0)
+                x = Math.floor(Math.random() * 4);
+            while ((x != 0) && (count != 9)) {
+                tube3[tube3.length] = x;
+                countArray[x] -= 1;
+                x = Math.floor(Math.random() * 4);
+                count++;
+                while (((x == 0) || (countArray[x] == 0)) && (count < 9))
+                    x = Math.floor(Math.random() * 4);
+            }
+            tube3[tube3.length] = 0;
+
+            //here you put the ball by the arrays
+            var c1 = 0;
+            var c2 = 0;
+            var c3 = 0;
+
+            while (c2 < tube2.length - 1) {
+                var p = document.createElement("img");
+                p.setAttribute("src", "../pictures/" + tube2[c2] + ".png");
+                p.classList.add("ball");
+                ss++;
+                p.setAttribute("ondragstart", "drag()");
+                document.getElementById('tube2').appendChild(p);
+                c2++;
+            }
+
+            while (c1 < tube1.length - 1) {
+
+                var p = document.createElement("img");
+                p.setAttribute("src", "../pictures/" + tube1[c1] + ".png");
+                p.classList.add("ball");
+                ss++;
+                p.setAttribute("ondragstart", "drag()");
+                document.getElementById('tube1').appendChild(p);
+                c1++;
+            }
+
+            while (c3 < tube3.length - 1) {
+
+                var p = document.createElement("img");
+                p.setAttribute("src", "../pictures/" + tube3[c3] + ".png");
+                p.classList.add("ball");
+                ss++;
+                p.setAttribute("ondragstart", "drag()");
+                document.getElementById('tube3').appendChild(p);
+                c3++;
+            }
+
+
+            for (var i = 1; i < 4; i++) {
+                var p = document.createElement("img");
+                p.setAttribute("src", "../pictures/" + i + ".png");
+                p.classList.add("ball");
+                p.setAttribute("draggable", "true");
+                p.setAttribute("id", "i" + i + "");
+                p.setAttribute("ondragstart", "drag()");
+                document.getElementById('t1').appendChild(p);
+            }
+            for (var i = 1; i < 4; i++) {
+                var p = document.createElement("img");
+                p.setAttribute("src", "../pictures/" + i + ".png");
+
+                p.classList.add("ball");
+                p.setAttribute("draggable", "true");
+                p.setAttribute("id", "i" + i + 10 + "");
+
+                p.setAttribute("ondragstart", "drag()");
+                document.getElementById('t2').appendChild(p);
+            }
+            for (var i = 1; i < 4; i++) {
+                var p = document.createElement("img");
+                p.setAttribute("src", "../pictures/" + i + ".png");
+                p.classList.add("ball");
+                p.setAttribute("draggable", "true");
+                p.setAttribute("id", "i" + i + 6 + "");
+                p.setAttribute("ondragstart", "drag()");
+                document.getElementById('t3').appendChild(p);
+            }
+
+
+            var hh1 = document.getElementById('startGame');
+            hh1.currentTime = 0;
+            hh1.volume = volumes;
+
+            hh1.play();
+        }
+
+        //here you let it start drop
+        function allowDrop() {
+            event.preventDefault();
+
+        }
+        //here you keep the id for the dragging
+        function drag() {
+            event.dataTransfer.setData("inform", event.target.id);
+        }
+
+        //here you let him finish put the drag item
+
+        function drop() {
+            event.preventDefault();
+            var data = event.dataTransfer.getData("inform");
+            var kkk = event.target.childNodes[0];
+            //if (kkk == "undefined") {
+            //    window.alert(event.target.childNodes[0]);
+            //    event.target.insertBefore(document.getElementById(data), kkk);
+            //}
+
+            //else {
+            //    event.target.appendChild(document.getElementById(data));
+            //}
+
+            event.target.insertBefore(document.getElementById(data), kkk);
+
+        }
+
+        var flag;
+        function check() // here you check if the client win
+        {
+            if (f_check != 2) {
+
+                flag = 0;
+                var x = document.querySelectorAll("#t1 img");
+                var y = document.querySelectorAll("#t2 img");
+                var z = document.querySelectorAll("#t3 img");
+
+                if ((x.length != (tube1.length - 1)) || (y.length != (tube2.length - 1)) || (z.length != (tube3.length - 1))) {
+                    var hh = document.getElementById("fail");
+                    hh.currentTime = 0;
+                    hh.volume = volumes;
+                    hh.play();
+
+                    $("#loss_time").show("slow", function () {
+                        $(this).animate({ fontSize: "160px" });
+                    });
+
+                }
+
+                else {
+                    for (var i = 0; i < x.length; i++) {
+                        var size = new String();
+                        size = x[i].src;
+                        var which = size.substring(size.length - 5, size.length - 4);
+                        if (which != tube1[i]) {
+
+                            flag = 1;
+                            break;
+                        }
+                    }
+
+                    for (var i = 0; i < y.length; i++) {
+                        var size = new String();
+                        size = y[i].src;
+                        var which = size.substring(size.length - 5, size.length - 4);
+                        if (which != tube2[i]) {
+
+                            flag = 1;
+                            break;
+                        }
+                    }
+
+                    for (var i = 0; i < z.length; i++) {
+                        var size = new String();
+                        size = z[i].src;
+                        var which = size.substring(size.length - 5, size.length - 4);
+                        if (which != tube3[i]) {
+
+                            flag = 1;
+                            break;
+                        }
+                    }
+
+                    if (flag == 0) {
+                        f_check = 1;
+                        $("#you_won").show("slow", function () {
+                            $(this).animate({ fontSize: "150px" });
+                            var hhh = document.getElementById("corr");
+                            hhh.currentTime = 0;
+                            hhh.volume = volumes;
+                            hhh.play();
+                            document.getElementById("d").innerHTML = 7 - 6 - 1 + Number(document.getElementById("d").textContent) + 10;
+                            $(this).animate({ fontSize: "150px" });
+                            $("#boy").off("click");
+                        });
+                    }
+                    else {
+                        var hh = document.getElementById("fail");
+                        hh.currentTime = 0;
+                        hh.volume = volumes;
+                        hh.play();
+
+                        $("#loss_time").show("slow", function () {
+                            $(this).animate({ fontSize: "160px" });
+                        });
+
+                    }
+                }
+            }
+            ccnt = 0; says = true;
+        }
+        function checkMiddle() // here you check if the client win in the middle....
+        {
+            flag = 0;
+            var x = document.querySelectorAll("#t1 img");
+            var y = document.querySelectorAll("#t2 img");
+            var z = document.querySelectorAll("#t3 img");
+
+            if ((x.length != (tube1.length - 1)) || (y.length != (tube2.length - 1)) || (z.length != (tube3.length - 1))) {
+                var hh = document.getElementById("fail");
+                hh.currentTime = 0;
+                hh.volume = volumes;
+                hh.play();
+            }
+            else {
+
+                for (var i = 0; i < x.length; i++) {
+                    var size = new String();
+                    size = x[i].src;
+                    var which = size.substring(size.length - 5, size.length - 4);
+                    if (which != tube1[i]) {
+
+                        flag = 1;
+                        break;
+                    }
+                }
+
+                for (var i = 0; i < y.length; i++) {
+                    var size = new String();
+                    size = y[i].src;
+                    var which = size.substring(size.length - 5, size.length - 4);
+                    if (which != tube2[i]) {
+
+                        flag = 1;
+                        break;
+                    }
+                }
+
+                for (var i = 0; i < z.length; i++) {
+                    var size = new String();
+                    size = z[i].src;
+                    var which = size.substring(size.length - 5, size.length - 4);
+                    if (which != tube3[i]) {
+
+                        flag = 1;
+                        break;
+                    }
+                }
+
+
+
+                if (flag == 0) {
+                    says = true;
+                    f_check = 1;
+                    $("#you_won").show("slow", function () {
+                        $(this).animate({ fontSize: "150px" });
+                        var hhh = document.getElementById("corr");
+                        hhh.currentTime = 0;
+                        hhh.volume = volumes;
+                        hhh.play();
+                        document.getElementById("d").innerHTML = 7 - 6 - 1 + Number(document.getElementById("d").textContent) + 10;
+                        $(this).animate({ fontSize: "150px" });
+                        $("#boy").off("click");
+                    });
+                }
+                else {
+                    var hh = document.getElementById("fail");
+                    hh.currentTime = 0;
+                    hh.volume = volumes;
+                    hh.play();
+                }
+
+            }
+        }
+
+
+    </script>
+</head>
+
+<body onloaded="setInterval('func()',3) , fFill()">
+    <div id="loss_time">
+        <a href="../index.html"title="לתפריט הראשי">
+            <img class="options" id="buttonIndex_1" src="../pictures/לחצנים חתוך/תפריט.png" title="למשחק"/>
+        </a>
+        <img class="options" id="buttonMixUp_1" src="../pictures/לחצנים חתוך/משחק.png"title="למשחק">
+    </div>
+    <div id="you_won">
+
+        <a href="../index.html" >
+            <img class="options" id="buttonIndex_1" src="../pictures/לחצנים חתוך/תפריט.png"/>
+        </a>
+
+        <img class="options" id="buttonMixUp_2" src="../pictures/לחצנים חתוך/משחק.png"title="למשחק">
+    </div>
+    <nav>
+        <div id="mySidenav" class="sidenav">
+
+           
+
+           
+              
+         
+
+            <div class="learn">
+                <strong>  :הוראות המעבדה✔</strong>
+                <br />
+                ד"ר יוריקה נקלע למצוקה
+                מפקחת משרד הבריאות
+
+                באה בעוד מספר דקות
+
+                ויש לסדר את כדורי המבחנה
+
+                לפי התיאוריה שד"ר יוריקה פיתח אמש.
+
+                כדי להתחיל לשחק יש ללחוץ על הכפתור העליון-
+
+                <br />
+                ולמהר להרכיב את התרופה בטרם יחלוף הזמן.
+
+                שימו לב: <br />בתום הזמן הנך בצעד מתקדם יותר!&emsp; עולים/יורדים בהתאם להישגיך....
+
+                &hearts; באפשרותך לקרא לד"ר יוריקה והוא יזוז בחוסר אונים ויקרא לעזרתך<br />
+              🤗  &dArr;  בהנאה רבה
+
+            </div>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <br />
+        </div>
+    </nav>
+
+
+
+    <nav>
+        <div id="optionsButtons">
+            <a href="#" title="לללללל"><img class="options" id="buttonStop" src="../pictures/לחצנים חתוך/עצור.png" /></a>
+            <a href="#" title="לצליל/להשתקה">
+                <img class="options" id="buttonAudio" src="../pictures/לחצנים חתוך/שמע.png" onclick="stopVolume()" />
+            </a>
+                <div id="p"></div>
+                <a href="../index.html"title="לתפריט המעבדה" >
+                    <img class="options" id="buttonIndex" src="../pictures/לחצנים חתוך/תפריט.png" />
+                </a>
+                <img class="options" id="buttonStop" src="../pictures/לחצנים חתוך/ערבב שוב.png" />
+
+
+
+                <a href="#" title="לעצירת שעון החול והמשך" onclick="stopContinue()">
+                    <img onclick="stopContinue()" class="options" id="buttonContinue" src="../pictures/לחצנים חתוך/המשך.png" />
+                </a>
+
+
+
+                <a href="#" title="להוראות המשחק">
+                    <img onclick="openNav()" class="options" id="buttonHelp" src="../pictures/לחצנים חתוך/עזרה.png" />
+                </a>
+
+                <a href="#"  title="להתחלת המשחק">
+                    <img onclick="fFill() , setInterval('func()',3)" class="options" id="buttonMixUp" src="../pictures/לחצנים חתוך/משחק.png" />
+                </a>
+                <a id="titleId" href="#" title="🤗מצאתי את הנוסחה">   <img class="options" id="buttonStar" onclick="checkMiddle()" src="../pictures/לחצנים חתוך/כוכב.png" /></a>
+
+</div>
+
+    </nav>
+    <article>
+        <section id="sectionn">
+
+            <div id="star">
+                <span id="step">👣 </span><span id="counter">0</span>
+                <span id="spanstar">⭐</span> <span id="d">0</span>
+            </div>
+
+            <div id="screemi">
+                <div id="tube1" class="t"></div>
+                <div id="tube2" class="t"></div>
+                <div id="tube3" class="t"></div>
+                <img id="clock" src="../pictures/c.png" />
+            </div>
+
+
+            <img id="stari1" class="star" src="../pictures/star.png" />
+            <img id="stari2" class="star" src="../pictures/star.png" />
+            <img id="stari3" class="star" src="../pictures/star.png" />
+            <div id="wrapperWatch">
+                <div id="water"></div>
+                <div id="fullWater"> </div>
+
+            </div>
+
+            <audio controls="controls" id="fail">
+                <source src="../voices/wrong.mp3" type="audio/mpeg" />
+            </audio>
+             <img title="געו בי כדי שאלחיץ אתכם" id="boy" src="../pictures/b3_n.PNG" />
+            <div id="v11"><br /><br />אני צריך <br />עזרה דחוף</div>
+
+            <dialog id="firstText"><p> wellcome!!! </p></dialog>
+
+
+        </section>
+        <section id="game">
+
+            <div id="wrapperTubes">
+                <div id="t1" class="tubes" ondragend="sof()" ondragover="allowDrop()" ondrop="drop()"></div>
+                <div id="t2" class="tubes" ondragend="sof()" ondragover="allowDrop()" ondrop="drop()"></div>
+                <div id="t3" class="tubes" ondragend="sof()" ondragover="allowDrop()" ondrop="drop()"></div>
+            </div>
+        </section>
+    </article>
+    <audio controls="controls" id="startGame">
+        <source src="../voices/startGame.mp3" type="audio/mpeg" />
+    </audio>
+
+    <audio controls="controls" id="corr">
+        <source src="../voices/correct.mp3" type="audio/mpeg" />
+    </audio>
+
+    <audio controls="controls" id="fail">
+        <source src="../voices/wrong.mp3" type="audio/mpeg" />
+
+    </audio>
+
+</body>
+</html>

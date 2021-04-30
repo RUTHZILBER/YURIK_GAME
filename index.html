@@ -1,0 +1,1758 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>NanoLab2020RuthZilber</title>
+    <script>
+
+        var str = "NanoLabRuthZilber";
+        var y = str.length - 1;
+        function f7() {
+            y++;
+            if (y > str.length)
+                y = 0;
+            
+            window.document.title = (str).substring(y, str.length) + (str).substring(0, y);
+            if (y == -1)
+                y = 0;
+
+            x = window.setTimeout("f7()", 300);
+        }
+
+        window.addEventListener("DOMContentLoaded", function () {
+            f7();
+            
+
+        });
+
+    </script>
+    <style>
+
+        .btn orange
+        {
+           
+        }
+        .schema-anim {
+        }
+
+        div.schema-anim div#canvas_line_back, div.schema-anim div#canvas_line1, div.schema-anim div#canvas_container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 400px;
+            width: 500px;
+        }
+
+
+        .pink {
+            background-color: #fa3958;
+        }
+
+            .pink:hover {
+                background-color: #fa3958;
+                opacity: 1.7;
+            }
+
+        .green {
+            background-color: #0ec8b0;
+        }
+
+        .gray {
+            background-color: #808080;
+        }
+
+        .orange {
+            background-color: #eb562c;
+            height:25vh;
+            font-variant:small-caps;
+        }
+
+        #wrapperHead {
+            width: 100vw;
+            height: 100vh;
+            background-color: white;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .schema-anim {
+            align-content: flex-start;
+            /*align-content:flex-end;*/
+        }
+
+        section {
+        }
+
+        article {
+        }
+
+        .schema-anim {
+            clear: both;
+            position: relative;
+            height: 400px;
+            width: 500px;
+            top: 20vh;
+            right: 20vw;
+            z-index: 1;
+            float: left;
+            /*//right: 35vw;*/
+        }
+
+        .btn {
+            width: 25vw;
+            height: 22vh;
+            color: white;
+            font-size: 8vw;
+            text-align: center;
+            font-family: 'Fb Karnaf';
+            /*outline:solid white;*/
+        }
+
+            .btn:hover {
+                opacity: 0.75;
+            }
+           #ff{
+               width:200px;
+               height:200px;
+               background-color:firebrick;
+           }
+        #wrapperBarNav {
+            display: flex;
+            height: 90vh;
+            width: 30vw;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+
+        #logo {
+            font-size: 60px;
+            text-align: right;
+            justify-content: space-around;
+            color: #278115;
+            float:left;
+        }
+
+        @media screen and (max-width:1000px) and (min-width:1px) {
+            #logo {
+                font-size: 30px;
+                text-align: right;
+              
+                color: #278115;
+                justify-content:space-around;
+            }
+            
+        }
+        /*// float: right;*/ a {
+            text-decoration: none;
+        }
+    </style>
+   
+
+</head>
+<body>
+
+    <div id="wrapperHead">
+
+
+        <p id="logo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NanoLab <br />RuthZilber2020</p>
+
+        <article>
+            <section>
+                <div class='schema-anim'>
+                    <div id="canvas_line_back"></div>
+                    <div id="canvas_line1">
+                        <svg id="svg_line" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="500px" height="400px" viewBox="0 0 500 400" enable-background="new 0 0 500 400" xml:space="preserve">
+                        <g id="Layer_1">
+                        <path id="line1" fill="none" stroke="#fa3958" stroke-width="3" stroke-miterlimit="10" d="M80.193,227.11v-48.02c0-2.209,1.869-4,4.176-4
+                        h18.648c2.306,0,4.176,1.791,4.176,4v14.625v24.54h0.068c0,3.927,3.184,7.111,7.111,7.111s7.111-3.184,7.111-7.111l-0.097-38.442
+                        c0-3.928,3.185-7.112,7.112-7.112c3.927,0,7.111,3.184,7.111,7.112l-0.142,38.442c0,3.927,3.185,7.111,7.112,7.111
+                        c3.927,0,7.111-3.184,7.111-7.111l-0.029-38.442c0-3.928,3.185-7.112,7.112-7.112c3.927,0,7.111,3.184,7.111,7.112l-0.142,38.442
+                        c0,3.927,3.185,7.111,7.112,7.111c3.927,0,7.111-3.184,7.111-7.111v-38.442c0-3.928,3.184-7.112,7.112-7.112
+                        c3.927,0,7.111,3.184,7.111,7.112l-0.141,38.442c0,3.927,3.184,7.111,7.112,7.111c3.927,0,7.111-3.184,7.111-7.111v-38.165v-1.125
+                        c0-2.209,1.87-4,4.176-4h18.648c2.306,0,4.176,1.791,4.176,4v14.625v112.188">
+                        <animate id="a1" attributeName="stroke-dashoffset" from="0" to="0" dur="4s" fill="freeze" calcMode="paced" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </path>
+                        <path id="line2" fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" d="M80.193,227.11v-48.02c0-2.209,1.869-4,4.176-4
+                        h18.648c2.306,0,4.176,1.791,4.176,4v14.625v24.54h0.068c0,3.927,3.184,7.111,7.111,7.111s7.111-3.184,7.111-7.111l-0.097-38.442
+                        c0-3.928,3.185-7.112,7.112-7.112c3.927,0,7.111,3.184,7.111,7.112l-0.142,38.442c0,3.927,3.185,7.111,7.112,7.111
+                        c3.927,0,7.111-3.184,7.111-7.111l-0.029-38.442c0-3.928,3.185-7.112,7.112-7.112c3.927,0,7.111,3.184,7.111,7.112l-0.142,38.442
+                        c0,3.927,3.185,7.111,7.112,7.111c3.927,0,7.111-3.184,7.111-7.111v-38.442c0-3.928,3.184-7.112,7.112-7.112
+                        c3.927,0,7.111,3.184,7.111,7.112l-0.141,38.442c0,3.927,3.184,7.111,7.112,7.111c3.927,0,7.111-3.184,7.111-7.111v-38.165v-1.125
+                        c0-2.209,1.87-4,4.176-4h18.648c2.306,0,4.176,1.791,4.176,4v14.625v112.188">
+                        <animate id="a2" begin="a3.end" attributeName="stroke-dashoffset" from="0" to="0" dur="8s" fill="freeze" calcMode="paced" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </path>
+                        <path id="line3" fill="none" stroke="#0ec8b0" stroke-width="3" stroke-miterlimit="10" d="M259.73,317.604L300.209,277.125L300.304,277.061L314.467,277.125L315.262,277.125L331.936,293.8">
+                        <animate id="a3" begin="5s" attributeName="stroke-dashoffset" from="0" to="0" dur="3s" fill="freeze" calcMode="paced" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+             </path>
+                        <path id="line4" fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" d="M259.73,317.604L300.209,277.125L300.304,277.061L314.467,277.125L315.262,277.125L331.936,293.8">
+                        <animate id="a4" begin="a2.end" attributeName="stroke-dashoffset" from="0" to="0" dur="3s" fill="freeze" calcMode="paced" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </path>
+                        <path id="line5" fill="none" stroke="#eb562c" stroke-width="3" stroke-miterlimit="10" d="M364.125,266.366L364.125,46.667L371.729,39.062L463,54L463,66.667">
+                        <animate id="a5" begin="a3.end" attributeName="stroke-dashoffset" from="0" to="0" dur="5s" fill="freeze" calcMode="paced" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+             </path>
+                        <path id="line6" fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" d="M364.125,266.366L364.125,46.667L371.729,39.062L463,54L463,66.667">    <animate id="a6" begin="a4.end" attributeName="stroke-dashoffset" from="0" to="0" dur="5s" fill="freeze" calcMode="paced" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </path>
+         </g>
+    </svg>
+                    </div>
+                    <div id="canvas_container"></div>
+                </div>
+
+            </section>
+        </article>
+
+        <nav>
+            <div id="wrapperBarNav">
+
+                <a href="htmlPages/home.html"><div class="btn green">למעבדה</div></a>
+                
+                <a href="htmlPages/sketch.html"><div class="btn orange">לרשום</div></a>
+
+                <a href="htmlPages/labartory.html">
+                    <div class="btn pink">נסויים</div>
+                </a>
+                <a href="htmlPages/boolskriple.html"><div class="btn gray">לקוד המעבדה</div></a>
+            </div>
+        </nav>
+
+
+    </div>
+    <script src="scripts/jquery-3.1.0.js"></script>
+    <script src="scripts/jquery-3.1.0.min.js"></script>
+    <script src="scripts/Ra.js"></script>
+    <script src="scripts/JavaScript.js"></script>
+   
+    <!--<a href="../../HtmlPage.html"> <img src="../../Pages/homeicon.png" style="position:fixed;top:5vw;" /></a>-->
+</body>
+</html>
